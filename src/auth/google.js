@@ -14,9 +14,8 @@ const options = {
 if (options.clientID) {
   passport.use(new google.OAuth2Strategy(options, function (req, accessToken, refreshToken, profile, done) {
     const fieldName = 'google.id'
-    console.log(profile.id)
-    User.find({'google.id': profile.id}).then (function (user) {
-      if (!user || user.length === 0) {
+    User.findOne({'google.id': profile.id}).then (function (user) {
+      if (!user) {
         const userDoc = {
           id: profile.id,
           email: profile.emails[0].value,
@@ -28,7 +27,7 @@ if (options.clientID) {
           return done(null, user)
         })
       } else {
-        return done(null, user[0])      
+        return done(null, user)      
       }
     })
   }))

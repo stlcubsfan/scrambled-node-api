@@ -16,6 +16,18 @@ const config = convict({
     }
   },
   authentication: {
+    local: {
+      signUpUrl: {
+        doc: 'URL for signup',
+        default: '/api/authentication/local/signup',
+        env: 'LOCAL_SIGNUP_URL'
+      },
+      loginUrl: {
+        doc: 'URL for login',
+        default: '/api/authentication/local/login',
+        env: 'LOCAL_LOGIN_URL'
+      }
+    },
     google: {
       clientId: {
         doc: "Client ID from Google",
@@ -37,7 +49,6 @@ const config = convict({
         default: '/api/authentication/google/redirect',
         env: 'GOOGLE_REDIRECT_URL'        
       }
-
     },
     token: {
       secret: {
