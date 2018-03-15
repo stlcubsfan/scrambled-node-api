@@ -1,0 +1,32 @@
+{
+  "name": "scrambled-node-api",
+  "version": "1.0.0",
+  "description": "Node API for scrambled SPA",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stlcubsfan/scrambled-node-api.git"
+  },
+  "author": "Brian Coles <stlcubsfan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stlcubsfan/scrambled-node-api/issues"
+  },
+  "homepage": "https://github.com/stlcubsfan/scrambled-node-api#readme",
+  "dependencies": {
+    "convict": "^4.0.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.10",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
