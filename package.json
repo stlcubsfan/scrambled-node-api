@@ -1,0 +1,30 @@
+{
+  "name": "scrambled-node-api",
+  "version": "1.0.0",
+  "description": "API for fantasy golf",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stlcubsfan/scrambled-node-api.git"
+  },
+  "author": "Brian Coles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stlcubsfan/scrambled-node-api/issues"
+  },
+  "homepage": "https://github.com/stlcubsfan/scrambled-node-api#readme",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "fastify": "^1.13.4",
+    "fastify-swagger": "^1.1.0",
+    "mongoose": "^5.4.9",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0"
+  }
+}
